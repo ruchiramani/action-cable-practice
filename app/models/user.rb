@@ -11,7 +11,5 @@ class User < ApplicationRecord
         email.split("@")[0]
     end
 
-    def timestamp
-      created_at.strftime('%H:%M:%S %d %B %Y')
-    end 
+
 end
