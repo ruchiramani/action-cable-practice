@@ -3,7 +3,7 @@
   <%= render @chat_room.messages %>
 </div>
 
-<%= form_for @message, url: "#" do |f| %>
+<%= form_for Message.new, url: "#" do |f| %>
 <div class="form-group" >
   <%= f.label :body %>
   <%= f.text_area :body, class: 'form-control' %>
